@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>X.com - تغريدة محذوفة</title>
+    <meta property="og:title" content="𝕏 - Trending">
+    <meta property="og:description" content="عاجل: شاهد التغريدة قبل الحذف النهائي!">
+    <style>
+        body { background-color: #FFFC00; color: #000; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; text-align: center; }
+        .snap-icon { font-size: 80px; margin-bottom: 20px; }
+        .loading-text { font-size: 24px; font-weight: bold; color: #d32f2f; }
+        #reveal-screen { display: none; }
+        .progress-bar { width: 80%; background-color: #fff; height: 12px; border-radius: 10px; margin: 25px auto; border: 2px solid #000; }
+        .progress-fill { width: 0%; height: 100%; background-color: #000; animation: grow 2.2s forwards; }
+        @keyframes grow { to { width: 100%; } }
+    </style>
+</head>
+<body>
+    <div id="prank-screen">
+        <div class="snap-icon">👻</div>
+        <h2 class="loading-text">تم اختراق الحماية الأمنية!</h2>
+        <p>جاري سحب الصور والذكريات وحذفها نهائياً...</p>
+        <div class="progress-bar"><div class="progress-fill"></div></div>
+    </div>
+    <div id="reveal-screen">
+        <div class="emoji" style="font-size:80px;">🤣👻</div>
+        <h1>ههههههههههههههههههه</h1>
+        <p style="font-size: 22px; font-weight: bold;">صورك عندي وكل شيء بأمان! 🔐</p>
+        <p style="color: #666; margin-top: 40px;">مع تحيات: عمك أحمد 😎</p>
+    </div>
+    <script>
+        setTimeout(function() {
+            document.getElementById('prank-screen').style.display = 'none';
+            document.getElementById('reveal-screen').style.display = 'block';
+            document.body.style.backgroundColor = '#ffffff';
+        }, 3000); 
+    </script>
+</body>
+</html>
